@@ -1,0 +1,18 @@
+<div style="text-align:center">
+    <h1>Lista de Imágenes</h1>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let image of images">
+        <div class="card mb-3">
+          <img [src]="image.url" alt="{{ image.title }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ image.title }}</h5>
+            <p class="card-text">{{ image.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
